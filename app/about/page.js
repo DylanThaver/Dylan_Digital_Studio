@@ -1,6 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FiPenTool, FiCode } from "react-icons/fi";
+import { SiCanva, SiInkscape, SiHtml5, SiCss3, SiAseprite, SiReact, SiNextdotjs } from "react-icons/si";
+import ToolItem from "@/components/ToolItem"
 
 export default function About() {
   return (
@@ -72,6 +75,54 @@ export default function About() {
             </ul>
           </div>
         </motion.section>
+
+        {/* Tools & Technologies */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="bg-black/70 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-12 mb-12"
+        >
+          <h2 className="text-2xl font-semibold mb-2">Tools & Technologies</h2>
+          <p className="text-gray-400 mb-8">
+            Design and development tools I use to craft professional digital solutions.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            {/* Design Tools */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <FiPenTool className="text-orange-400 text-xl" />
+                <h3 className="text-lg font-semibold">Design & Illustration</h3>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <ToolItem icon={<SiCanva />} label="Canva" />
+                <ToolItem icon={<SiInkscape />} label="Inkscape" />
+                <ToolItem icon={<SiAseprite />} label="Aseprite" />
+              </div>
+            </div>
+
+            {/* Development Tools */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <FiCode className="text-orange-400 text-xl" />
+                <h3 className="text-lg font-semibold">Web Development</h3>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <ToolItem icon={<SiHtml5 />} label="HTML" />
+                <ToolItem icon={<SiCss3 />} label="CSS" />
+                <ToolItem icon={<SiReact />} label="React" />
+                <ToolItem icon={<SiNextdotjs />} label="NEXT.js" />
+              </div>
+            </div>
+
+          </div>
+        </motion.section>
+
+
 
         {/* Education & Credentials */}
         <motion.section

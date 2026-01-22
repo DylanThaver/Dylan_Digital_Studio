@@ -6,7 +6,7 @@ import { taglineFont } from "./fonts";
 export default function Home() {
   return (
     <main className="pt-0 md:pt-0">
-        <section className="h-screen w-full bg-black backdrop-blur-md flex flex-col items-center justify-center text-center">
+        <section className="relative h-screen w-full bg-black backdrop-blur-md flex flex-col items-center justify-center text-center">
         {/* Main Title */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
