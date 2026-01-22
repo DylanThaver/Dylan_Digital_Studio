@@ -5,7 +5,7 @@ import Head from "next/head";
 export const metadata = {
   title: "Dylan Digital Studio",
   description: "Professional Branding & Digital Solutions",
-  keywords: "branding, digital solutions, web design, visual design",
+  keywords: "branding, digital solutions, web design, visual design, business cards, logos, letterheads, invitations",
   authors: [{ name: "Dylan Thaver" }],
   // Open Graph (social sharing)
   openGraph: {
