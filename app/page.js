@@ -14,7 +14,7 @@ export default function Home() {
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="text-7xl md:text-8xl font-extrabold mb-4
                     uppercase tracking-[0.05em]
-                    bg-gradient-to-r from-red-500 via-yellow-500 to-orange-500
+                    bg-linear-to-r from-red-500 via-yellow-500 to-orange-500
                     bg-clip-text text-transparent"
           style={{textShadow: '0 0 30px rgba(255, 120, 50, 0.4)'}}
         >
