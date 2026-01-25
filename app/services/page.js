@@ -13,8 +13,8 @@ const designServices = [
 ];
 
 const webServices = [
-  { name: "Single Page Landing Site", price: "From R1200" },
-  { name: "Multi-Page Business Website", price: "From R3500" },
+  { name: "Tier 1: The Essentials (HTML/CSS/JS)", price: "From R1200" },
+  { name: "Tier 2: High Performance Next.js Site", price: "From R4500" },
 ];
 
 export default function ServicesPage() {
