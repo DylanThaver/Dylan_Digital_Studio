@@ -5,6 +5,44 @@
   --foreground: #171717;
 }
 
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scaleX(-1); }
+  50% { transform: translateY(-20px) scaleX(-1); }
+}
+
+@keyframes shadow-pulse {
+  0%, 100% { 
+    transform: scale(1); 
+    opacity: 0.4; 
+  }
+  50% { 
+    transform: scale(0.6); 
+    opacity: 0.15; 
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-shadow-pulse {
+  animation: shadow-pulse 4s ease-in-out infinite;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -16,6 +54,27 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+/* Custom Scrollbar for Dylan Digital Studio */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a; /* Matches your dark background */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #444; /* Subtle dark gray */
+    border-radius: 20px;
+    border: 2px solid #0a0a0a; /* Creates "padding" around the thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f97316; /* Your brand orange on hover */
   }
 }
 
