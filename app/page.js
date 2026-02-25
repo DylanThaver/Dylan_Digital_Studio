@@ -71,7 +71,7 @@ export default function Home() {
               <div className="relative flex flex-col items-center -scale-x-100">
                 {/* The Mascot */}
                 <Image 
-                  src="/Mascot.png" 
+                  src="/Mascot.webp" 
                   alt="Mascot"
                   width={300} 
                   height={300}
